@@ -1,0 +1,30 @@
+[
+    {
+        "_id": "1",
+        "img": "https://i.ibb.co/KwFs2fG/card1.jpg",
+        "location": "789 Oak St, Villagetown, USA",
+        "price_range": "$400,000 - $450,000",
+        "verification_status": "verified"
+    },
+    {
+        "_id": "2",
+        "img": "https://i.ibb.co/F5wGDzw/card2.jpg",
+        "location": "101 Pine St, Hamletville, USA",
+        "price_range": "$250,000 - $300,000",
+        "verification_status": "verified"
+    },
+    {
+        "_id": "3",
+        "img": "https://i.ibb.co/QFqcvDD/card3.jpg",
+        "location": "222 Maple St, Riverside, USA",
+        "price_range": "$500,000 - $550,000",
+        "verification_status": "verified"
+    },
+    {
+        "_id": "4",
+        "img": "https://i.ibb.co/y8sQgL1/card4.jpg",
+        "location": "333 Birch St, Lakeside, USA",
+        "price_range": "$350,000 - $400,000",
+        "verification_status": "verified"
+    }
+]
