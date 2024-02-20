@@ -1,0 +1,22 @@
+[
+    {
+        "name": "John Doe",
+        "img": "https://i.ibb.co/fNCmyVc/Man1.png",
+        "Description": "Our stay at the property was absolutely fantastic! The amenities were top-notch, and the staff was incredibly attentive.",
+        "title": "Seaside Paradise Villa"
+        
+    },
+    {
+        "name": "Jane Smith",
+        "img": "https://i.ibb.co/sRn955L/Man2.png",
+        "Description": "My family and I had a wonderful experience at this property. The location was perfect, offering breathtaking views of the mountains.",
+        "title": "Mountain Escape Cabin"
+    },
+    {
+        "name": "David Johnson",
+        "img": "https://i.ibb.co/nzcGLbg/Man3.png",
+        "Description": "We had an amazing time at this property. The attention to detail in the design and decor was impressive.  The property was clean",
+        "title": "Luxury Lakeside Retreat"
+      
+    }
+]
