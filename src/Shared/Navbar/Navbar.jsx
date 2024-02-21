@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="navbar  bg-base-100">
+            <div className="navbar fixed z-30 bg-opacity-10 max-w-screen-xl mx-auto bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,12 +29,12 @@ const Navbar = () => {
                     <img src={logoImg} alt="" />
                    </NavLink>
                 </div>
-                <div className="navbar-end  hidden lg:flex">
+                <div className="navbar-end text-black font-medium hidden lg:flex">
                     <ul className="menu   gap-5 text-sm font-normal menu-horizontal px-1">
                         {navItem}
                     </ul>
                 </div>
-               
+                
             </div>
         </div>
     );

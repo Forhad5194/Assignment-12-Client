@@ -1,0 +1,402 @@
+[
+    {
+        "_id": "1",
+        "property_title": "Modern Apartment with City View",
+        "property_location": "New York, NY",
+        "agent_name": "John Smith",
+        "agent_image": "agent1.jpg",
+        "verification_status": "Verified",
+        "price_range": "$200,000 - $250,000",
+        "image": "https://i.ibb.co/Y3W9VDH/1.jpg"
+    },
+    {
+        "_id": "2",
+        "property_title": "Cozy Cottage near the Beach",
+        "property_location": "Santa Monica, CA",
+        "agent_name": "Emily Johnson",
+        "agent_image": "agent2.jpg",
+        "verification_status": "Verified",
+        "price_range": "$300,000 - $350,000",
+        "image": "https://i.ibb.co/Y3W9VDH/1.jpg"
+    },
+    {
+        "_id": "3",
+        "property_title": "Luxury Penthouse with Panoramic Views",
+        "property_location": "Miami, FL",
+        "agent_name": "David Brown",
+        "agent_image": "agent3.jpg",
+        "verification_status": "Verified",
+        "price_range": "$1,500,000 - $2,000,000",
+        "image": "https://i.ibb.co/c6bf7vN/2.jpg"
+    },
+    {
+        "_id": "4",
+        "property_title": "Charming Townhouse in Historic District",
+        "property_location": "Boston, MA",
+        "agent_name": "Sarah Clark",
+        "agent_image": "agent4.jpg",
+        "verification_status": "Verified",
+        "price_range": "$400,000 - $450,000",
+        "image": "https://i.ibb.co/c6bf7vN/2.jpg"
+    },
+    {
+        "_id": "5",
+        "property_title": "Ski-in/Ski-out Chalet in Aspen",
+        "property_location": "Aspen, CO",
+        "agent_name": "Michael White",
+        "agent_image": "agent5.jpg",
+        "verification_status": "Verified",
+        "price_range": "$3,000,000 - $3,500,000",
+        "image": " https: //i.ibb.co/nMfPgT4/3.jpg"
+    },
+    {
+        "_id": "6",
+        "property_title": "Contemporary Loft in Arts District",
+        "property_location": "Los Angeles, CA",
+        "agent_name": "Jessica Lee",
+        "agent_image": "agent6.jpg",
+        "verification_status": "Verified",
+        "price_range": "$600,000 - $650,000",
+        "image": "https: //i.ibb.co/nMfPgT4/3.jpg"
+    },
+    {
+        "_id": "7",
+        "property_title": "Lakefront Retreat with Private Dock",
+        "property_location": "Lake Tahoe, NV",
+        "agent_name": "Matthew Evans",
+        "agent_image": "agent7.jpg",
+        "verification_status": "Verified",
+        "price_range": "$800,000 - $850,000",
+        "image": "https://i.ibb.co/5RFMnwc/4.jpg"
+    },
+    {
+        "_id": "8",
+        "property_title": "Rustic Cabin in the Mountains",
+        "property_location": "Breckenridge, CO",
+        "agent_name": "Alexandra Martinez",
+        "agent_image": "agent8.jpg",
+        "verification_status": "Verified",
+        "price_range": "$500,000 - $550,000",
+        "image": "https://i.ibb.co/5RFMnwc/4.jpg"
+    },
+    {
+        "_id": "9",
+        "property_title": "Historic Brownstone with Garden",
+        "property_location": "Brooklyn, NY",
+        "agent_name": "Daniel Jackson",
+        "agent_image": "agent9.jpg",
+        "verification_status": "Verified",
+        "price_range": "$1,200,000 - $1,300,000",
+        "image": "https://i.ibb.co/fYntDvm/5.jpg"
+    },
+    {
+        "_id": "10",
+        "property_title": "Beachfront Villa in Malibu",
+        "property_location": "Malibu, CA",
+        "agent_name": "Olivia Rodriguez",
+        "agent_image": "agent10.jpg",
+        "verification_status": "Verified",
+        "price_range": "$4,500,000 - $5,000,000",
+        "image": "https://i.ibb.co/fYntDvm/5.jpg"
+    },
+    {
+        "_id": "11",
+        "property_title": "Urban Condo with Skyline Views",
+        "property_location": "Chicago, IL",
+        "agent_name": "Ryan Nguyen",
+        "agent_image": "agent11.jpg",
+        "verification_status": "Verified",
+        "price_range": "$700,000 - $750,000",
+        "image": "https: //i.ibb.co/zVDCtSH/6.jpg"
+    },
+    {
+        "_id": "12",
+        "property_title": "Secluded Farmhouse with Acres of Land",
+        "property_location": "Napa Valley, CA",
+        "agent_name": "Sophia Adams",
+        "agent_image": "agent12.jpg",
+        "verification_status": "Verified",
+        "price_range": "$1,800,000 - $2,200,000",
+        "image": "https: //i.ibb.co/zVDCtSH/6.jpg"
+    },
+    {
+        "_id": "13",
+        "property_title": "Glamorous Mansion in Beverly Hills",
+        "property_location": "Beverly Hills, CA",
+        "agent_name": "William Turner",
+        "agent_image": "agent13.jpg",
+        "verification_status": "Verified",
+        "price_range": "$10,000,000 - $12,000,000",
+        "image": "https://i.ibb.co/ZGCXRYX/7.jpg"
+    },
+    {
+        "_id": "14",
+        "property_title": "Elegant Townhome in Georgetown",
+        "property_location": "Washington, D.C.",
+        "agent_name": "Ava Cooper",
+        "agent_image": "agent14.jpg",
+        "verification_status": "Verified",
+        "price_range": "$1,000,000 - $1,100,000",
+        "image": "https://i.ibb.co/ZGCXRYX/7.jpg"
+    },
+    {
+        "_id": "15",
+        "property_title": "Sustainable Eco-Home in Portland",
+        "property_location": "Portland, OR",
+        "agent_name": "Ethan Baker",
+        "agent_image": "agent15.jpg",
+        "verification_status": "Verified",
+        "price_range": "$750,000 - $800,000",
+        "image": "https://i.ibb.co/jhD7HjW/8.jpg"
+    },
+    {
+        "_id": "16",
+        "property_title": "Riverside Cottage with Dock",
+        "property_location": "Savannah, GA",
+        "agent_name": "Mia Thompson",
+        "agent_image": "agent16.jpg",
+        "verification_status": "Verified",
+        "price_range": "$350,000 - $400,000",
+        "image": "https://i.ibb.co/jhD7HjW/8.jpg"
+    },
+    {
+        "_id": "17",
+        "property_title": "Sky-High Penthouse in Manhattan",
+        "property_location": "New York, NY",
+        "agent_name": "Daniel Miller",
+        "agent_image": "agent17.jpg",
+        "verification_status": "Verified",
+        "price_range": "$5,000,000 - $6,000",
+        "image": "https://i.ibb.co/V3bpck1/9.jpg"
+    },
+    {
+        "_id": "18",
+        "property_title": "Charming Bungalow in Key West",
+        "property_location": "Key West, FL",
+        "agent_name": "Isabella Garcia",
+        "agent_image": "agent18.jpg",
+        "verification_status": "Verified",
+        "price_range": "$600,000 - $650,000",
+        "image": "https://i.ibb.co/V3bpck1/9.jpg"
+    },
+    {
+        "_id": "19",
+        "property_title": "Mountain Retreat with Stunning Views",
+        "property_location": "Jackson Hole, WY",
+        "agent_name": "Christopher Moore",
+        "agent_image": "agent19.jpg",
+        "verification_status": "Verified",
+        "price_range": "$1,200,000 - $1,500,000",
+        "image": "https://i.ibb.co/myQCs5v/10.jpg"
+    },
+    {
+        "_id": "20",
+        "property_title": "Art-Deco Condo in South Beach",
+        "property_location": "Miami Beach, FL",
+        "agent_name": "Natalie King",
+        "agent_image": "agent20.jpg",
+        "verification_status": "Verified",
+        "price_range": "$900,000 - $950,000",
+        "image": "https://i.ibb.co/myQCs5v/10.jpg"
+    },
+    {
+        "_id": "21",
+        "property_title": "Historic Victorian Home in San Francisco",
+        "property_location": "San Francisco, CA",
+        "agent_name": "Lucas Thompson",
+        "agent_image": "agent21.jpg",
+        "verification_status": "Verified",
+        "price_range": "$2,500,000 - $2,700,000",
+        "image": "https://i.ibb.co/hWn79cy/11.jpg"
+    },
+    {
+        "_id": "22",
+        "property_title": "Sunny Beach House in Venice",
+        "property_location": "Venice Beach, CA",
+        "agent_name": "Sophie Anderson",
+        "agent_image": "agent22.jpg",
+        "verification_status": "Verified",
+        "price_range": "$1,000,000 - $1,100,000",
+        "image": "https://i.ibb.co/hWn79cy/11.jpg"
+    },
+    {
+        "_id": "23",
+        "property_title": "Urban Loft with Industrial Charm",
+        "property_location": "Brooklyn, NY",
+        "agent_name": "Liam Wilson",
+        "agent_image": "agent23.jpg",
+        "verification_status": "Verified",
+        "price_range": "$800,000 - $850,000",
+        "image": "https://i.ibb.co/vcfNFHD/12.jpg"
+    },
+    {
+        "_id": "24",
+        "property_title": "Secluded Cabin in the Woods",
+        "property_location": "Lake Tahoe, NV",
+        "agent_name": "Emma Harris",
+        "agent_image": "agent24.jpg",
+        "verification_status": "Verified",
+        "price_range": "$700,000 - $750,000",
+        "image": "https://i.ibb.co/vcfNFHD/12.jpg"
+    },
+    {
+        "_id": "25",
+        "property_title": "Rustic Farmhouse with Vineyard",
+        "property_location": "Sonoma, CA",
+        "agent_name": "Noah Garcia",
+        "agent_image": "agent25.jpg",
+        "verification_status": "Verified",
+        "price_range": "$2,000,000 - $2,500,000",
+        "image": "https://i.ibb.co/HtLrhGn/13.jpg"
+    },
+    {
+        "_id": "26",
+        "property_title": "Luxury High-Rise in Downtown LA",
+        "property_location": "Los Angeles, CA",
+        "agent_name": "Aiden Brown",
+        "agent_image": "agent26.jpg",
+        "verification_status": "Verified",
+        "price_range": "$3,500,000 - $4,000,000",
+        "image": "https://i.ibb.co/HtLrhGn/13.jpg"
+    },
+    {
+        "_id": "27",
+        "property_title": "Historic Colonial Home in Boston",
+        "property_location": "Boston, MA",
+        "agent_name": "Sophia Evans",
+        "agent_image": "agent27.jpg",
+        "verification_status": "Verified",
+        "price_range": "$1,300,000 - $1,400,000",
+        "image": "https: //i.ibb.co/ydLFwCG/14.jpg"
+    },
+    {
+        "_id": "28",
+        "property_title": "Lakefront Cabin with Boat Dock",
+        "property_location": "Lake Placid, NY",
+        "agent_name": "Elijah Martinez",
+        "agent_image": "agent28.jpg",
+        "verification_status": "Verified",
+        "price_range": "$600,000 - $650,000",
+        "image": "https: //i.ibb.co/ydLFwCG/14.jpg"
+    },
+    {
+        "_id": "29",
+        "property_title": "Modern Townhome in San Diego",
+        "property_location": "San Diego, CA",
+        "agent_name": "Mia Robinson",
+        "agent_image": "agent29.jpg",
+        "verification_status": "Verified",
+        "price_range": "$750,000 - $800,000",
+        "image": "https://i.ibb.co/d0jfhKK/15.jpg"
+    },
+    {
+        "_id": "30",
+        "property_title": "Chic Condo in SoHo",
+        "property_location": "New York, NY",
+        "agent_name": "James Cooper",
+        "agent_image": "agent30.jpg",
+        "verification_status": "Verified",
+        "price_range": "$1,100,000 - $1,200,000",
+        "image": "https://i.ibb.co/d0jfhKK/15.jpg"
+    },
+    {
+        "_id": "31",
+        "property_title": "Mediterranean Villa with Pool",
+        "property_location": "Santa Barbara, CA",
+        "agent_name": "Luna Rodriguez",
+        "agent_image": "agent31.jpg",
+        "verification_status": "Verified",
+        "price_range": "$3,000,000 - $3,500,000",
+        "image": "https://i.ibb.co/k4zZbSP/16.jpg"
+    },
+    {
+        "_id": "32",
+        "property_title": "Historic Townhouse in Philadelphia",
+        "property_location": "Philadelphia, PA",
+        "agent_name": "Logan White",
+        "agent_image": "agent32.jpg",
+        "verification_status": "Verified",
+        "price_range": "$900,000 - $950,000",
+        "image": "https://i.ibb.co/k4zZbSP/16.jpg"
+    },
+    {
+        "_id": "33",
+        "property_title": "Mountain Chalet with Hot Tub",
+        "property_location": "Telluride, CO",
+        "agent_name": "Ava Martinez",
+        "agent_image": "agent33.jpg",
+        "verification_status": "Verified",
+        "price_range": "$1,500,000 - $1,800,000",
+        "image": "https://i.ibb.co/7CkChVF/17.jpg"
+    },
+    {
+        "_id": "34",
+        "property_title": "City View Penthouse in Seattle",
+        "property_location": "Seattle, WA",
+        "agent_name": "Benjamin Thompson",
+        "agent_image": "agent34.jpg",
+        "verification_status": "Verified",
+        "price_range": "$2,200,000 - $2,500,000",
+        "image": "https://i.ibb.co/7CkChVF/17.jpg"
+    },
+    {
+        "_id": "35",
+        "property_title": "Coastal Retreat with Ocean Views",
+        "property_location": "Monterey, CA",
+        "agent_name": "Emma Wilson",
+        "agent_image": "agent35.jpg",
+        "verification_status": "Verified",
+        "price_range": "$1,800,000 - $2,000,000",
+        "image": "https://i.ibb.co/qMDvJJ6/18.jpg"
+    },
+    {
+        "_id": "36",
+        "property_title": "Historic Brownstone in Brooklyn Heights",
+        "property_location": "Brooklyn, NY",
+        "agent_name": "Nathan Thompson",
+        "agent_image": "agent36.jpg",
+        "verification_status": "Verified",
+        "price_range": "$2,500,000 - $3,000,000",
+        "image": "https://i.ibb.co/qMDvJJ6/18.jpg"
+    },
+    {
+        "_id": "37",
+        "property_title": "Ski Lodge in Lake Tahoe",
+        "property_location": "Lake Tahoe, NV",
+        "agent_name": "Olivia Davis",
+        "agent_image": "agent37.jpg",
+        "verification_status": "Verified",
+        "price_range": "$1,200,000 - $1,400,000",
+        "image": "https: //i.ibb.co/5Bt4WsC/19.jpg"
+    },
+    {
+        "_id": "38",
+        "property_title": "Modern Beachfront Home in Hawaii",
+        "property_location": "Maui, HI",
+        "agent_name": "Ethan Martinez",
+        "agent_image": "agent38.jpg",
+        "verification_status": "Verified",
+        "price_range": "$4,000,000 - $4,500,000",
+        "image": " https: //i.ibb.co/5Bt4WsC/19.jpg"
+    },
+    {
+        "_id": "39",
+        "property_title": "Historic Mansion in Savannah",
+        "property_location": "Savannah, GA",
+        "agent_name": "Sophia Rodriguez",
+        "agent_image": "agent39.jpg",
+        "verification_status": "Verified",
+        "price_range": "$2,800,000 - $3,200,000",
+        "image": "https://i.ibb.co/H2mJG6B/20.jpg"
+    },
+    {
+        "_id": "40",
+        "property_title": "Modern Urban Apartment in Chicago",
+        "property_location": "Chicago, IL",
+        "agent_name": "Liam Garcia",
+        "agent_image": "agent40.jpg",
+        "verification_status": "Verified",
+        "price_range": "$900,000 - $1,000,000",
+        "image": "https://i.ibb.co/H2mJG6B/20.jpg"
+    }
+]

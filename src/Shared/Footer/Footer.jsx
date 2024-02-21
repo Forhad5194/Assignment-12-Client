@@ -2,7 +2,7 @@ import logoImg from '../../assets/logo/logo.png'
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-10 bg-base-200 rounded-xl text-base-content">
+            <footer className="footer p-10 bg-base-200 rounded-xl mt-8 text-base-content">
                 <aside>
                     <img src={logoImg} alt="" />
                     <p>NECKLE REAL ESTATE<br />Providing reliable real estate since 1994</p>
