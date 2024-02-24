@@ -9,7 +9,7 @@ const Advertisement = () => {
 
     const [item, setItem] = useState([])
     useEffect(() => {
-        fetch('Card.json')
+        fetch('http://localhost:5000/Card')
             .then(res => res.json())
             .then(data => setItem(data))
     }, [])

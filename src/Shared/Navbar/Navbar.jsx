@@ -6,9 +6,9 @@ const Navbar = () => {
 
     const navItem = <>
         <NavLink>Home</NavLink>
-        <NavLink>All Properties</NavLink>
+        <NavLink to={'/propertie'}>All Properties</NavLink>
         <NavLink>Dashbord</NavLink>
-        <NavLink>LogIn</NavLink>
+        <NavLink to={'/Login'}>LogIn</NavLink>
     </>
 
 
