@@ -1,14 +1,14 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 const Login = () => {
     return (
         <div>
             <div className="hero ">
+                <Helmet 
+                 title="Neckle Login"
+                />
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    {/* <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                       <img className='w-[544px] h-[352px]' src={LogImg} alt="" />
-                    </div> */}
                     <div className="">
                         <div className="sm::flex justify-center items-center">
                             <h2 className="text-4xl text-center font-bold p-8">Pleae Login .. </h2>
@@ -35,7 +35,7 @@ const Login = () => {
 
                         </form>
                         <div className="border border-black p-8 w-[600px] ml-8 rounded-2xl mt-8">
-                            <h2 className="text-xl text-center font-medium  ">Don’t have an account? <Link className="text-blue-500">Join</Link></h2>
+                            <h2 className="text-xl text-center font-medium  ">Don’t have an account? <Link className="text-blue-500" to={'/SingUp'}>Join</Link></h2>
                         </div>
                     </div>
                 </div>
