@@ -1,15 +1,19 @@
 
 import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 
 
 
 
 const Login = () => {
-    const {signInUser} =useContext(AuthContext)
+    const { signInUser } = useContext(AuthContext)
+    const navigate = useNavigate()
+    const location = useLocation()
+    const from = location.state?.from?.pathname || "/";
 
     const handleLogin = event => {
         event.preventDefault();
@@ -18,22 +22,40 @@ const Login = () => {
         const password = form.password.value;
         console.log(email, password);
         signInUser(email, password)
-        .then(result => {
-            const user = result.user;
-            console.log(user);
-        })
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                Swal.fire({
+                    title: "User LogIn SuccessFull ",
+                    showClass: {
+                        popup: `
+                        animate__animated
+                        animate__fadeInUp
+                        animate__faster
+                      `
+                    },
+                    hideClass: {
+                        popup: `
+                        animate__animated
+                        animate__fadeOutDown
+                        animate__faster
+                      `
+                    }
+                });
+                navigate(from, { replace: true });
+            })
 
-        
-      
+
+
     }
- 
+
 
 
     return (
         <div>
             <div className="hero ">
-                <Helmet 
-                 title="Neckle Login"
+                <Helmet
+                    title="Neckle Login"
                 />
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="">

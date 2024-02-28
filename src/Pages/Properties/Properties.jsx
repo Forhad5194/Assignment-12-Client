@@ -11,8 +11,6 @@ const Properties = () => {
             .then(data => setPropertie(data))
 
     }, [])
-    console.log(propertie);
-
     return (
         <div>
             <Helmet
