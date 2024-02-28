@@ -10,7 +10,7 @@ import Swal from "sweetalert2";
 
 
 const Login = () => {
-    const { signInUser } = useContext(AuthContext)
+    const { signInUser, googleLogin } = useContext(AuthContext)
     const navigate = useNavigate()
     const location = useLocation()
     const from = location.state?.from?.pathname || "/";
@@ -49,7 +49,10 @@ const Login = () => {
 
     }
 
-
+    const handleGoogle = (media) => {
+        media()
+            .then(res => console.log(res))
+    }
 
     return (
         <div>
@@ -61,7 +64,7 @@ const Login = () => {
                     <div className="">
                         <div className="sm::flex justify-center items-center">
                             <h2 className="text-4xl text-center font-bold p-8">Pleae Login .. </h2>
-                            <button className="btn btn-outline w-[600px] mx-auto ml-8 text-black">Login With Google</button>
+                            <button   onClick={() => handleGoogle(googleLogin)}  className="btn btn-outline w-[600px] mx-auto ml-8 text-black">Login With Google</button>
                             <p className="text-xl text-center font-bold pt-8" >or</p>
                         </div>
 

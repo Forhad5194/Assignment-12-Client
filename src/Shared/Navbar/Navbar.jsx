@@ -16,7 +16,7 @@ const Navbar = () => {
     const navItem = <>
         <NavLink>Home</NavLink>
         <NavLink to={'/propertie'}>All Properties</NavLink>
-        <NavLink>Dashbord</NavLink>
+        <NavLink to={'/Dashbord'}>Dashbord</NavLink>
 
         {
             user ? <>

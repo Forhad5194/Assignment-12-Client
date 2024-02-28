@@ -6,18 +6,21 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 const SingUp = () => {
     const { register, handleSubmit, formState: { errors }, } = useForm();
-    const { createUser} = useContext(AuthContext)
+    const { createUser,  googleLogin } = useContext(AuthContext)
     const onSubmit = (data) => {
         console.log(data)
         createUser(data.email, data.password)
-        .then( result => {
-            const logUser = result.user;
-            console.log(logUser);
-        })
+            .then(result => {
+                const logUser = result.user;
+                console.log(logUser);
+            })
 
     };
 
-
+    const handleGoogle = (media) => {
+        media()
+            .then(res => console.log(res))
+    }
 
 
 
@@ -44,7 +47,7 @@ const SingUp = () => {
                                 <label className="label">
                                     <span className="label-text">First Name</span>
                                 </label>
-                                <input type="text" placeholder="First Name" name="name" {...register("name", { required: true })}  className="input input-bordered w-[280px]" />
+                                <input type="text" placeholder="First Name" name="name" {...register("name", { required: true })} className="input input-bordered w-[280px]" />
                                 {errors.name && <span className="text-red-600 ">First name is Required</span>}
 
                             </div>
@@ -52,7 +55,7 @@ const SingUp = () => {
                                 <label className="label">
                                     <span className="label-text">Last Name</span>
                                 </label>
-                                <input type="text" placeholder="Last Name" name="last" {...register("last",{ required: true })}className="input input-bordered w-[280px]" />
+                                <input type="text" placeholder="Last Name" name="last" {...register("last", { required: true })} className="input input-bordered w-[280px]" />
                                 {errors.last && <span className="text-red-600 ">Last name is Required</span>}
                             </div>
                         </div>
@@ -60,7 +63,7 @@ const SingUp = () => {
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
-                            <input type="text" placeholder="Email " name="email" {...register("email" ,{ required: true })} className="input input-bordered w-[600px]" />
+                            <input type="text" placeholder="Email " name="email" {...register("email", { required: true })} className="input input-bordered w-[600px]" />
                             {errors.email && <span className="text-red-600 ">Email is Required</span>}
 
 
@@ -69,7 +72,7 @@ const SingUp = () => {
                             <label className="label">
 
                             </label>
-                            <input type="password" placeholder="Password " name="password" {...register("password", { required: true,minLength:6, maxLength:16, pattern:/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/ })} className="input input-bordered w-[600px]" />
+                            <input type="password" placeholder="Password " name="password" {...register("password", { required: true, minLength: 6, maxLength: 16, pattern: /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/ })} className="input input-bordered w-[600px]" />
                             {errors.password?.type === 'required' && <span className="text-red-600 ">Password is Required</span>}
                             {errors.password?.type === 'minLength' && <span className="text-red-600 ">Password mast be 6 character </span>}
                             {errors.password?.type === 'maxLength' && <span className="text-red-600 ">Password is under 16 character  </span>}
@@ -78,8 +81,12 @@ const SingUp = () => {
                         </div>
 
 
-                        <input  className="btn btn-outline w-[600px] mx-auto mt-5 text-black" type="submit" value="Join " />
+                        <input className="btn btn-outline w-[600px] mx-auto mt-5 text-black" type="submit" value="Join " />
                     </form>
+                    <div className="sm::flex justify-center items-center">
+                        <h2 className="text-4xl text-center font-bold p-8">Pleae join with .. </h2>
+                        <button  onClick={() => handleGoogle(googleLogin)}  className="btn btn-outline w-[600px] mx-auto ml-8 text-black">join With Google</button>
+                    </div>
 
                 </div>
             </div>

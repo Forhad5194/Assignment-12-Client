@@ -5,6 +5,7 @@ import Properties from "../Pages/Properties/Properties";
 import Login from "../Pages/Login/Login";
 import SingUp from "../Pages/SingUp/SingUp";
 import PrivateRoute from "./PrivateRoute";
+import Dashbord from "../Pages/Dashbord/Dashbord";
 export const router = createBrowserRouter([
     {
         path: '/',
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
                 path: 'propertie',
                 element: <PrivateRoute > <Properties /></PrivateRoute>
             },
+            {
+                path: "Dashbord",
+                element: <PrivateRoute><Dashbord /></PrivateRoute>
+            }
 
         ],
 
