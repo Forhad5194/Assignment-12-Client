@@ -1,5 +1,8 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
+
 
 const PropertiesCard = ({ propertie }) => {
     const { image, property_title, property_location, agent_name, agent_image, verification_status, price_range } = propertie;
@@ -17,13 +20,15 @@ const PropertiesCard = ({ propertie }) => {
                         <div className="w-8 mt-5 rounded-full ring ring-green-500  ring-offset-2">
                             <img src={agent_image} />
                         </div>
-                            <h4 className="mt-4 font-medium">{agent_name}</h4>
+                        <h4 className="mt-4 font-medium">{agent_name}</h4>
                     </div>
-                            <p className=" font-medium"> Status: {verification_status}</p>
-                            <p className="font-medium"> {price_range}</p>
-                    <div className="card-actions justify-end">
-                        <input className="btn btn-outline btn-success" type="button" value="Buy Now " />
-                    </div>
+                    <p className=" font-medium"> Status: {verification_status}</p>
+                    <p className="font-medium"> {price_range}</p>
+                    <Link to={`/propertie/${propertie?._id}`}>
+                        <div className="card-actions justify-end">
+                            <input className="btn btn-outline btn-success uppercase" type="button" value="learn more " />
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

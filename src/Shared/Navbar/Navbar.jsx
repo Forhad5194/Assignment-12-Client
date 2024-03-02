@@ -22,6 +22,7 @@ const Navbar = () => {
             user ? <>
 
                 <button onClick={handleLogOut} className="">Logout</button>
+                
 
             </> : <>
                 <NavLink to={'/Login'}>LogIn</NavLink>
@@ -33,7 +34,8 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="navbar fixed z-30 bg-opacity-10 max-w-screen-xl mx-auto bg-base-100">
+            {/*  fixed z-30 */}
+            <div className="navbar bg-opacity-10 max-w-screen-xl  mx-auto bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

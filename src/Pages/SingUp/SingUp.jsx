@@ -1,20 +1,41 @@
 import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const SingUp = () => {
+    const navigate = useNavigate()
+    const location = useLocation()
+    const from = location.state?.from?.pathname || "/";
     const { register, handleSubmit, formState: { errors }, } = useForm();
-    const { createUser,  googleLogin } = useContext(AuthContext)
+    const { createUser, googleLogin } = useContext(AuthContext)
     const onSubmit = (data) => {
         console.log(data)
         createUser(data.email, data.password)
             .then(result => {
                 const logUser = result.user;
                 console.log(logUser);
+                Swal.fire({
+                    title: "join Successfully ",
+                    showClass: {
+                        popup: `
+                        animate__animated
+                        animate__fadeInUp
+                        animate__faster
+                      `
+                    },
+                    hideClass: {
+                        popup: `
+                        animate__animated
+                        animate__fadeOutDown
+                        animate__faster
+                      `
+                    }
+                });
             })
-
+        navigate(from, { replace: true });
     };
 
     const handleGoogle = (media) => {
@@ -85,7 +106,7 @@ const SingUp = () => {
                     </form>
                     <div className="sm::flex justify-center items-center">
                         <h2 className="text-4xl text-center font-bold p-8">Pleae join with .. </h2>
-                        <button  onClick={() => handleGoogle(googleLogin)}  className="btn btn-outline w-[600px] mx-auto ml-8 text-black">join With Google</button>
+                        <button onClick={() => handleGoogle(googleLogin)} className="btn btn-outline w-[600px] mx-auto ml-8 text-black">join With Google</button>
                     </div>
 
                 </div>

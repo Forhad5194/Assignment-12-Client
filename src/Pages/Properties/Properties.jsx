@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet-async";
 const Properties = () => {
     const [propertie, setPropertie] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/Properties')
+        fetch('http://localhost:5000/propertie')
             .then(res => res.json())
             .then(data => setPropertie(data))
 

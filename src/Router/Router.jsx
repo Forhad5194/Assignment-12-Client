@@ -6,6 +6,7 @@ import Login from "../Pages/Login/Login";
 import SingUp from "../Pages/SingUp/SingUp";
 import PrivateRoute from "./PrivateRoute";
 import Dashbord from "../Pages/Dashbord/Dashbord";
+import PropertieDetails from "../Pages/Properties/PropertieDetails";
 export const router = createBrowserRouter([
     {
         path: '/',
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
             {
                 path: "Dashbord",
                 element: <PrivateRoute><Dashbord /></PrivateRoute>
+            },
+            {
+                path: '/propertie/:id',
+                element: <PrivateRoute> <PropertieDetails /></PrivateRoute>
             }
 
         ],
