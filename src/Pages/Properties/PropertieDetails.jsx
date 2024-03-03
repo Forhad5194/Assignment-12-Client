@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+/* eslint-disable no-undef */
 import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 import Reviwes from "../Reviwes/Reviwes";
+import Wishlist from "../../component/Wishlist/Wishlist";
+import { useEffect, useState } from "react";
 
 const PropertieDetails = () => {
     const { id } = useParams()
@@ -15,6 +17,8 @@ const PropertieDetails = () => {
             })
 
     }, [id])
+
+    
     return (
 
         <div>
@@ -52,7 +56,7 @@ const PropertieDetails = () => {
                         </div>
                     </div>
                     <div className="p-5">
-                        <button className="btn btn-outline w-full font-bold text-xl btn-success">Add to wishlist</button>
+                    <Wishlist />
                     </div>
 
                 </div>

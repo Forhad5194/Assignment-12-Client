@@ -2,27 +2,39 @@ import { NavLink } from "react-router-dom";
 import logoImg from '../../assets/logo/logo.png'
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { FaShoppingCart } from "react-icons/fa";
+import useWishlist from "../../hooks/useWishlist/useWishlist";
+
 
 
 const Navbar = () => {
+    const [addcard] = useWishlist()
 
-    const { user ,logOut } = useContext(AuthContext);
-    const handleLogOut =  () => {
+    const { user, logOut } = useContext(AuthContext);
+    const handleLogOut = () => {
         logOut()
-        .then(() =>{})
-        .catch(error => console.log(error))
+            .then(() => { })
+            .catch(error => console.log(error))
     }
 
     const navItem = <>
         <NavLink>Home</NavLink>
         <NavLink to={'/propertie'}>All Properties</NavLink>
         <NavLink to={'/Dashbord'}>Dashbord</NavLink>
+        <NavLink to={'/'}>
+            <button className="flex justify-center items-center gap-3">
+                <FaShoppingCart />
+
+                <div className="badge badge-secondary  w-[37px] ">+{addcard.length}</div>
+            </button>
+
+        </NavLink>
 
         {
             user ? <>
 
                 <button onClick={handleLogOut} className="">Logout</button>
-                
+
 
             </> : <>
                 <NavLink to={'/Login'}>LogIn</NavLink>
