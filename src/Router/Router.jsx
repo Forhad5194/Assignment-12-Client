@@ -7,6 +7,7 @@ import SingUp from "../Pages/SingUp/SingUp";
 import PrivateRoute from "./PrivateRoute";
 import Dashbord from "../Pages/Dashbord/Dashbord";
 import PropertieDetails from "../Pages/Properties/PropertieDetails";
+import AdvertisementDetails from "../Pages/Home/Advertisement/AdvertisementDetails";
 export const router = createBrowserRouter([
     {
         path: '/',
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
             {
                 path: '/propertie/:id',
                 element:  <PropertieDetails />
+            },
+            {
+                path: '/card/:id',
+                element: <PrivateRoute ><AdvertisementDetails /></PrivateRoute>,
             }
 
         ],

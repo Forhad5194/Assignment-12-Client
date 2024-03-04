@@ -18,7 +18,7 @@ const Reviwes = () => {
                         <div className="form-control mt-12 ">
                             <textarea className="textarea textarea-ghost" placeholder="Share Your Experience"></textarea>
                         </div>
-                        <input className="btn btn-outline  font-bold text-xl btn-success mt-12" type="submit" value={'Submit'} />
+                        <input className="btn btn-outline w-full font-bold text-xl btn-success uppercase mt-12" type="submit" value={'post'} />
                     </form>
 
                 </div>

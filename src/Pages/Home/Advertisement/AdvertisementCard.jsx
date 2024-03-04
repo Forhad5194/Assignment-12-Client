@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 const AdvertisementCard = ({ item }) => {
 
     const { img, location, price_range, verification_status } = item;
@@ -14,9 +16,11 @@ const AdvertisementCard = ({ item }) => {
                     </h2>
                     <p>${price_range}</p>
                     <p className="text-green-500">{verification_status}</p>
-                    <div className="card-actions justify-end">
-                         <input className="btn btn-outline btn-success" type="button" value="Lrean More" />
-                    </div>
+                    <Link to={`/card/${item?._id}`}>
+                        <div className="card-actions justify-end">
+                            <input className="btn btn-outline btn-success uppercase" type="button" value="learn more " />
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
