@@ -57,12 +57,8 @@ const Wishlist = () => {
                 }
             })
     }
-
-
-
-
-
-    return (
+    
+return (
         <div className="flex sm:flex-auto">
             <button onClick={() => handleAddtoCard(propertie)} className="btn btn-outline w-full font-bold text-xl btn-success">Add to wishlist</button>
             
